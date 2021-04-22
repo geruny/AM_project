@@ -1,0 +1,89 @@
+/* Section contacts */
+
+#contacts{
+    margin-bottom: 9%;
+}
+
+#contacts h3 {
+    font-weight: 600;
+    color: #914b4b;
+}
+
+#contacts .bg-contacts {
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 5%;
+}
+
+#contacts a {
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+
+#contacts a:hover {
+    color: #ff4a5b;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+
+#contacts .social a {
+    margin-right: 10px;
+}
+
+#contacts i {
+    margin-right: 10px;
+}
+
+#contacts .phones {
+    display: block;
+}
+
+#contacts .phones:last-child {
+    margin-top: 5px;
+}
+
+#contacts .map {
+    margin-top: 3%;
+}
+
+#contacts .border-left {
+    border-left: 1px solid;
+    padding-left: 4%;
+    margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+
+    #contacts .bg-contacts {
+        margin-top: 3%;
+    }
+
+    #contacts .border-left {
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+    }
+
+    .contacts-entry {
+        display: none;
+    }
+
+    #contacts h3 {
+        margin-bottom: 0;
+    }
+}
+
+
+#contact-us .contact-us-tittle {
+    margin: 0 7%;
+    padding: 6% 0 4% 3%;
+    border-top: 1px solid;
+}
+
+#contact-us .contact-us-tittle h2 {
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}

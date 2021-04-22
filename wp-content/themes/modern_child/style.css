@@ -1,0 +1,204 @@
+/*
+Theme Name:   modern_child
+Template:     modern
+Author:       geruny
+Version:      1.0
+Description:  Child theme for Moder 
+*/
+
+/* Theme's corrections for all pages*/
+
+html body {
+    font-family: 'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif !important;
+    line-height: 1.15 !important;
+}
+
+body .site .font-body,
+html body {
+    font-family: "Fira Sans",
+    "Helvetica Neue",
+    Arial,
+    sans-serif !important;
+    font-family: var(--typography_fonts_text) !important;
+}
+
+body .form-allowed-tags,
+body .line-height-m,
+body .sidebar,
+body .tagcloud,
+html body {
+    line-height: 1.62 !important;
+}
+
+.site-header .site-header-content {
+    padding: 10px 0 5px;
+}
+
+.site-header-content .social-links {
+    margin-top: 3%;
+}
+
+#intro-slideshow-content .intro-slideshow-item-title a {
+    font-size: calc(18px + 12 * (100vw / 1280));
+}
+
+.page-header,
+.search-field {
+    border: none;
+}
+
+@media only screen and (max-width: 54.9375em) {
+    .has-navigation-mobile .main-navigation-container .menu-search {
+        margin: 3% auto;
+    }
+
+    .has-navigation-mobile .main-navigation-container #menu-primary {
+        padding: 0 3%;
+        padding-bottom: 3%;
+    }
+}
+
+.breadcrumbs {
+    border-top: 1px solid;
+}
+
+.breadcrumbs {
+    padding-bottom: 4%;
+}
+
+.breadcrumbs .home:before {
+    top: 0.09em;
+}
+
+/* footer */
+
+.site-footer a:hover:not(.site-footer .back-to-top a:hover) {
+    text-decoration: underline !important;
+}
+
+#custom_html-3 a {
+    margin: 3px 0;
+}
+
+#custom_html-3 .info-block {
+    display: flex;
+    align-items: center;
+}
+
+#custom_html-3 i {
+    position: absolute;
+}
+
+#custom_html-3 a .text {
+    padding-left: 25px;
+}
+
+.footer-widgets .widget {
+    max-width: fit-content;
+}
+
+.footer-refs {
+    display: flex;
+}
+
+.private-police {
+    margin-right: 30px;
+}
+
+.site-footer .back-to-top a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-footer .back-to-top a:hover,
+#nav_menu-1 a:hover {
+    color: #ff4a5b;
+}
+
+/* background for all posts */
+.entry,
+.is-singular .content-area {
+    background-color: rgb(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+/* background for tittles */
+.design-entry,
+.project-entry,
+.contacts-entry {
+    padding: 3% 0 3% 10%;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+a {
+    text-decoration: none !important;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+
+a:hover {
+    color: #ff4a5b;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+/* contact form */
+
+.wpcf7 {
+    margin-left: 10%;
+    flex: auto;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: #914b4b;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 3% 0;
+}
+
+.wpcf7-not-valid-tip {
+    color: #914b4b;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-form-control {
+    width: 100%;
+}
+
+.wpcf7 .wpcf7-form input[type=submit] {
+    padding: 0.62em;
+    display: inline;
+    width: 200px;
+}
+
+/* adaptive */
+
+h2 {
+    font-size: calc(18px + 12 * (100vw / 1280));
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: calc(16px + 4 * (100vw / 1280));
+}
+
+a:not(.site-title-text) {
+    font-size: calc(11px + 3 * (100vw / 1280));
+}
+
+p {
+    font-size: calc(11px + 3 * (100vw / 1280));
+}
