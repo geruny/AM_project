@@ -82,7 +82,7 @@ while (have_posts()) : the_post();
 
                             <div class="cd-timeline-block">
                                 <div class="cd-timeline-img cd-movie">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
+                                    <i class="fas fa-paint-brush"></i>
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
@@ -95,7 +95,7 @@ while (have_posts()) : the_post();
 
                             <div class="cd-timeline-block">
                                 <div class="cd-timeline-img cd-picture">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+                                    <i class="fas fa-cube"></i>
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
@@ -108,7 +108,7 @@ while (have_posts()) : the_post();
 
                             <div class="cd-timeline-block">
                                 <div class="cd-timeline-img cd-location">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
+                                    <i class="fas fa-list-ul"></i>
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
@@ -121,7 +121,7 @@ while (have_posts()) : the_post();
 
                             <div class="cd-timeline-block">
                                 <div class="cd-timeline-img cd-location">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
+                                    <i class="fas fa-archive"></i>
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
@@ -132,17 +132,7 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-content -->
                             </div> <!-- cd-timeline-block -->
 
-                            <div class="cd-timeline-block">
-                                <div class="cd-timeline-img cd-movie">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-                                </div> <!-- cd-timeline-img -->
-
-                                <div class="cd-timeline-content">
-                                    <h2>Final Section</h2>
-                                    <p>This is the content of the last section</p>
-                                    <span class="cd-date">Feb 26</span>
-                                </div> <!-- cd-timeline-content -->
-                            </div> <!-- cd-timeline-block -->
+                            
                         </div> <!-- cd-timeline -->
                         </body>
                     </div>
