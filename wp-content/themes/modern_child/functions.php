@@ -29,7 +29,7 @@ function modern_child_theme_scripts()
         '/libs/js/bootstrap.min.js', array('jquery'), '5.0.0', true);
 
     wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() .
-        '/libs/css/font-awesome.min.css', array(), '5.15.2', 'all');
+        '/libs/css/font-awesome.min.css', array(), '5.15.3', 'all');
 
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 

@@ -18,25 +18,24 @@ while (have_posts()) : the_post();
                         <div class="col-12 col-md">
                             <div class="adres">
                                 <h3>Адрес:</h3>
-                                <a href="https://goo.gl/maps/xPbg7G7c4N4nJ6rv8" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>Гражданская ул., 13-15, Санкт-Петербург</a>
+                                <a href="https://goo.gl/maps/xPbg7G7c4N4nJ6rv8" target="_blank"><i class="fas fa-map-marker-alt"></i>Гражданская ул., 13-15, Санкт-Петербург</a>
                             </div>
                         </div>
                         <div class="col-12 col-md border-left">
                             <h3>Телефоны:</h3>
-                            <a class="phones" href="tel:+79817455467"><i class="fa fa-phone" aria-hidden="true"></i>+7(981)745-54-67</a>
-                            <a class="phones" href="tel:+79818752531"><i class="fa fa-phone" aria-hidden="true"></i>+7(981)875-25-31</a>
+                            <a class="phones" href="tel:+79817455467"><i class="fas fa-phone-alt"></i>+7(981)745-54-67</a>
+                            <a class="phones" href="tel:+79818752531"><i class="fas fa-phone-alt"></i>+7(981)875-25-31</a>
                         </div>
                         <div class="col-12 col-md border-left">
                             <h3>Email:</h3>
-                            <a href="mailto:asms-designspb@yandex.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>asms-designspb@yandex.ru</a>
+                            <a href="mailto:asms-designspb@yandex.ru"><i class="fas fa-envelope"></i>asms-designspb@yandex.ru</a>
                         </div>
                         <div class="col-12 col-md border-left">
                             <h3>Социальные сети:</h3>
                             <div class="social">
-                                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                <a href="https://www.behance.net/amdesignstudio2" target="_blank"><i class="fab fa-behance"></i></a>
+                                <a href="https://www.instagram.com/design_am_studio/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/ASSMDESIGN/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook"></i></a>
                             </div>
                         </div>
                     </div>
