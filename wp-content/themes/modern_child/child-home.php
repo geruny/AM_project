@@ -72,7 +72,7 @@ while (have_posts()) : the_post();
                                     <i class="fas fa-pencil-ruler"></i>
                                 </div> <!-- cd-timeline-img -->
                                 <div class="cd-timeline-content">
-                                    <h2>Этап 1</h2>
+                                    <h3>Этап 1</h3>
                                     <ul>
                                         <li>Замер помещения и составление технического задания</li>
                                         <li>Создание плана планировки и ключевых идей по каждому помещению</li>
@@ -86,7 +86,7 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Этап 2</h2>
+                                    <h3>Этап 2</h3>
                                     <ul>
                                         <li>Разработка стилевых эскизов</li>
                                     </ul>
@@ -99,7 +99,7 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Этап 3</h2>
+                                    <h3>Этап 3</h3>
                                     <ul>
                                         <li>Разработка 3D-визуализации на основе концепт-бордов и согласованной планировки</li>
                                     </ul>
@@ -112,7 +112,7 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Этап 4</h2>
+                                    <h3>Этап 4</h3>
                                     <ul>
                                         <li>Создание пакета строительных чертежей</li>
                                     </ul>
@@ -125,7 +125,7 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Этап 5</h2>
+                                    <h3>Этап 5</h3>
                                     <ul>
                                         <li>Авторский надзор</li>
                                         <li>Комплектация проекта</li>
@@ -135,7 +135,6 @@ while (have_posts()) : the_post();
 
 
                         </div> <!-- cd-timeline -->
-                        </body>
                     </div>
                 </div>
             </div>

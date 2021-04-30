@@ -8,29 +8,50 @@ Description:  Child theme for Moder
 
 /* Theme's corrections for all pages*/
 
-html body {
-    font-family: 'Helvetica Neue',
-    Helvetica,
-    Arial,
-    sans-serif !important;
-    line-height: 1.15 !important;
+@font-face {
+    font-family: 'Merlo Neue Round';
+    src: url('libs/webfonts/MerloNeueRound-Medium.woff2')format('woff2'),
+        url('libs/webfonts/MerloNeueRound-Medium.woff')format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 }
 
-body .site .font-body,
-html body {
-    font-family: "Fira Sans",
-    "Helvetica Neue",
-    Arial,
-    sans-serif !important;
-    font-family: var(--typography_fonts_text) !important;
+@font-face {
+    font-family: 'Circe';
+    src: url('libs/webfonts/Circe-Bold.woff2')format('woff2'),
+        url('libs/webfonts/Circe-Bold.woff')format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
 }
 
-body .form-allowed-tags,
-body .line-height-m,
-body .sidebar,
-body .tagcloud,
-html body {
-    line-height: 1.62 !important;
+@font-face {
+    font-family: 'Circe';
+    src: url('libs/webfonts/Circe-Light.woff2')format('woff2'),
+        url('libs/webfonts/Circe-Light.woff')format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+h1,
+h2 {
+    font-family: 'Merlo Neue Round';
+}
+
+h3,
+h4,
+h5{
+    font-family: 'Circe';
+    font-weight: 500;
+}
+
+html body,
+p,
+a {
+    font-family: 'Circe';
+    font-weight: 300;
 }
 
 .site-header .site-header-content {

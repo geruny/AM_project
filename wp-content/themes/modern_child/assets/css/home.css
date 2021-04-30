@@ -247,7 +247,7 @@ p.intro-slideshow-item-title {
     clear: both;
 }
 
-#cd-timeline h2{
+#cd-timeline h3{
     color: black;
 }
 
@@ -362,7 +362,7 @@ p.intro-slideshow-item-title {
     display: table;
 }
 
-.cd-timeline-content h2 {
+.cd-timeline-content h3 {
     color: #303e49;
 }
 
@@ -372,22 +372,10 @@ p.intro-slideshow-item-title {
     font-size: 0.8125rem;
 }
 
-/* .cd-timeline-content .cd-read-more {
-    display: inline-block;
-} */
-
 .cd-timeline-content ul {
     margin: 1em;
     line-height: 1.6;
 }
-
-/* .cd-timeline-content .cd-read-more {
-    float: right;
-    padding: 0.8em 1em;
-    background: #acb7c0;
-    color: #ffffff;
-    border-radius: 0.25em;
-} */
 
 .cd-timeline-content::before {
     content: "";
@@ -401,7 +389,7 @@ p.intro-slideshow-item-title {
 }
 
 @media only screen and (min-width: 768px) {
-    .cd-timeline-content h2 {
+    .cd-timeline-content h3 {
         font-size: 20px;
         font-size: 1.25rem;
     }
@@ -427,10 +415,6 @@ p.intro-slideshow-item-title {
         border-left-color: #ffffff;
     }
 
-    /* .cd-timeline-content .cd-read-more {
-        float: left;
-    } */
-
     .cd-timeline-block:nth-child(even) .cd-timeline-content {
         float: right;
     }
@@ -442,10 +426,6 @@ p.intro-slideshow-item-title {
         border-color: transparent;
         border-right-color: #ffffff;
     }
-/* 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-        float: right;
-    } */
 }
 
 /* Section contacts */
