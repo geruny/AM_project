@@ -68,15 +68,15 @@ while (have_posts()) : the_post();
                     <div class="row wow fadeInUp">
                         <div id="cd-timeline" class="cd-container">
                             <div class="cd-timeline-block">
-                                <div class="cd-timeline-img cd-picture">
+                                <div class="cd-timeline-img cd-bg">
                                     <i class="fas fa-pencil-ruler"></i>
                                 </div> <!-- cd-timeline-img -->
-
                                 <div class="cd-timeline-content">
-                                    <h2>Title of section 1</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                                    <a href="#0" class="cd-read-more">Read more</a>
-                                    <span class="cd-date">Jan 14</span>
+                                    <h2>Этап 1</h2>
+                                    <ul>
+                                        <li>Замер помещения и составление технического задания</li>
+                                        <li>Создание плана планировки и ключевых идей по каждому помещению</li>
+                                    </ul>
                                 </div> <!-- cd-timeline-content -->
                             </div> <!-- cd-timeline-block -->
 
@@ -86,10 +86,10 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Title of section 2</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-                                    <a href="#0" class="cd-read-more">Read more</a>
-                                    <span class="cd-date">Jan 18</span>
+                                    <h2>Этап 2</h2>
+                                    <ul>
+                                        <li>Разработка стилевых эскизов</li>
+                                    </ul>
                                 </div> <!-- cd-timeline-content -->
                             </div> <!-- cd-timeline-block -->
 
@@ -99,10 +99,10 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Title of section 3</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                                    <a href="#0" class="cd-read-more">Read more</a>
-                                    <span class="cd-date">Jan 24</span>
+                                    <h2>Этап 3</h2>
+                                    <ul>
+                                        <li>Разработка 3D-визуализации на основе концепт-бордов и согласованной планировки</li>
+                                    </ul>
                                 </div> <!-- cd-timeline-content -->
                             </div> <!-- cd-timeline-block -->
 
@@ -112,10 +112,10 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Title of section 4</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                                    <a href="#0" class="cd-read-more">Read more</a>
-                                    <span class="cd-date">Feb 14</span>
+                                    <h2>Этап 4</h2>
+                                    <ul>
+                                        <li>Создание пакета строительных чертежей</li>
+                                    </ul>
                                 </div> <!-- cd-timeline-content -->
                             </div> <!-- cd-timeline-block -->
 
@@ -125,14 +125,15 @@ while (have_posts()) : the_post();
                                 </div> <!-- cd-timeline-img -->
 
                                 <div class="cd-timeline-content">
-                                    <h2>Title of section 5</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-                                    <a href="#0" class="cd-read-more">Read more</a>
-                                    <span class="cd-date">Feb 18</span>
+                                    <h2>Этап 5</h2>
+                                    <ul>
+                                        <li>Авторский надзор</li>
+                                        <li>Комплектация проекта</li>
+                                    </ul>
                                 </div> <!-- cd-timeline-content -->
                             </div> <!-- cd-timeline-block -->
 
-                            
+
                         </div> <!-- cd-timeline -->
                         </body>
                     </div>
