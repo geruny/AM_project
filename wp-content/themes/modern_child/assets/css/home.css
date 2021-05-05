@@ -29,7 +29,7 @@ p.intro-slideshow-item-title {
 .title {
     margin: 5% 0;
     margin-left: 8%;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
 /* About us section*/
@@ -154,11 +154,11 @@ p.intro-slideshow-item-title {
 #choose-design .interior-card-bg {
     opacity: 0.4;
     position: absolute;
-    top: -20px;
-    left: -20px;
+    top: -25px;
+    left: -25px;
     width: 100%;
     height: 100%;
-    padding: 25px;
+    padding: 15%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -268,7 +268,6 @@ p.intro-slideshow-item-title {
 /* Work stages section */
 
 #process-block {
-    margin: 8% 0;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -468,16 +467,11 @@ p.intro-slideshow-item-title {
 /* Section contacts */
 
 #contacts {
-    margin-bottom: 9%;
+    margin: 3% 0;
 }
 
 #contacts h3 {
     color: #914b4b;
-}
-
-#contacts .bg-contacts {
-    background-color: rgba(0, 0, 0, 0.568);
-    padding: 5%;
 }
 
 #contacts a {
@@ -494,39 +488,73 @@ p.intro-slideshow-item-title {
     -webkit-transition: all 0.6s;
 }
 
-#contacts .social a {
-    margin-right: 10px;
+#contacts .contacts-info {
+    margin: 1% 3% 6% 3%;
 }
 
-#contacts i {
-    margin-right: 10px;
+#contacts .contacts-info .social {
+    max-width: fit-content;
+    display: inline;
 }
 
-#contacts .phones {
-    display: block;
-}
-
-#contacts .phones:last-child {
-    margin-top: 5px;
-}
-
-#contacts .map {
-    margin-top: 3%;
-}
-
-#contacts .border-left {
+#contacts .contacts-info .border-left {
     border-left: 1px solid;
     padding-left: 4%;
     margin-left: 2%;
 }
 
-@media (max-width: 768px) {
+#contacts .contacts-info .adres-wrapper {
+    padding-right: 2%;
+}
 
-    #contacts .bg-contacts {
-        margin-top: 3%;
+#contacts .contacts-info i {
+    margin-right: 10px;
+}
+
+#contacts .contacts-info .social i {
+    font-size: calc(11px + 7 * (100vw / 1280));
+    margin: 0;
+}
+
+#contacts .contacts-info .social a {
+    margin-right: 15%;
+}
+
+#contacts .contacts-info .social a:first-child {
+    margin-left: 3%;
+}
+
+#contacts .contacts-info .phones {
+    display: block;
+}
+
+#contacts .contacts-info .phones:last-child {
+    margin-top: 5px;
+}
+
+#contacts .map {
+    margin: 0 2%;
+    margin-top: 3%;
+}
+
+@media (max-width: 992px) {
+
+    #contacts .contacts-info {
+        margin: 1% 0% 6% 0%;
     }
 
-    #contacts .border-left {
+    #contacts .contacts-info .adres-wrapper {
+        padding-right: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #contacts .contacts-info {
+        margin: 1% 3% 6% 3%;
+    }
+
+    #contacts .contacts-info .border-left {
         padding-left: 0;
         margin-left: 0;
         border-left: none;
@@ -536,73 +564,6 @@ p.intro-slideshow-item-title {
         margin-bottom: 0;
     }
 }
-
-/* #contacts-block {
-    margin-top: 100px;
-}
-
-#contacts-block h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-#contacts-block .row {
-    position: relative;
-}
-
-#contacts-block .info-box {
-    background-color: #131313ee;
-    padding: 40px;
-    position: absolute;
-    left: 50px;
-    top: 160px;
-}
-
-
-#contacts-block .info-box h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 10px 0px 0px;
-    color: #914b4b;
-}
-
-#contacts-block .info-box a {
-    font-size: 14px;
-    color: #fff;
-    margin: 20px 0px;
-    font-weight: 500;
-}
-
-#contacts-block .info-box a i {
-    margin-right: 10px;
-}
-
-#contacts-block .info-box #fist-phone {
-    margin-bottom: -10px;
-}
-
-#contacts-block .social-links {
-    margin: 30px;
-    margin-left: 65px;
-}
-
-#contacts-block .social-links a {
-    font-size: 24px;
-    color: #fff;
-    margin: 10px;
-    font-weight: 500;
-    display: inline-block;
-
-}
-
-#contacts-block a:hover {
-    color: #ff4a5b;
-    transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -webkit-transition: all 0.6s;
-} */
 
 @keyframes show {
     from {
