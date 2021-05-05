@@ -28,8 +28,12 @@ while (have_posts()) : the_post();
                         <a class="grid-link" href="">
                             <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/public_design/1.jpg" alt="" />
                             <div class="details">
-                                <span class="title">Burgas</span>
-                                <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+                                <span class="title">
+                                    <h3>Burgas</h3>
+                                </span>
+                                <span class="info">
+                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -37,8 +41,12 @@ while (have_posts()) : the_post();
                         <a class="grid-link" href="">
                             <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/public_design/2.jpg" alt="" />
                             <div class="details">
-                                <span class="title">Антикафе</span>
-                                <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+                                <span class="title">
+                                    <h3>Антикафе</h3>
+                                </span>
+                                <span class="info">
+                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
+                                </span>
                             </div>
                         </a>
                     </div>
