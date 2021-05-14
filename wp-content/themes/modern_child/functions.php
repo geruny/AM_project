@@ -12,9 +12,10 @@ add_filter('template_include', function ($path) {
         return get_stylesheet_directory() . '/child-architecture.php';
     } elseif (is_page('contacts')) {
         return get_stylesheet_directory() . '/child-contacts.php';
-    } elseif (is_page('project-card'))
+    } elseif (is_page('project-card')) {
         return get_stylesheet_directory() . '/child-project-card.php';
-
+    } elseif (is_page('prices'))
+        return get_stylesheet_directory() . '/child-prices.php';
 
     return $path;
 });
@@ -70,6 +71,11 @@ function modern_child_theme_scripts()
             '/assets/css/project-card.css', array(), null, 'all');
     }
 
+    if (is_page('prices')) {
+        wp_enqueue_style('prices', get_stylesheet_directory_uri() .
+            '/assets/css/prices.css', array(), null, 'all');
+    }
+
     //for slide up animations
     wp_enqueue_style('animate', get_stylesheet_directory_uri() .
         '/libs/css/animate.css', array(), null, 'all');
@@ -82,7 +88,6 @@ add_action('wp_head', 'AM_yametrika');
 function AM_yametrika()
 {
 ?>
-
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m, e, t, r, i, k, a) {
@@ -125,7 +130,6 @@ function AM_yametrika()
             ym(75500323, 'reachGoal', 'formMetrika'); //yandex metrika
         }, false);
     </script>
-
 <?php
 }
 
