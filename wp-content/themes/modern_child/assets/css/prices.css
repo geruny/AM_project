@@ -1,0 +1,295 @@
+/* Theme's corrections */
+.intro-media {
+    background-color: #ffffff !important;
+}
+
+#page {
+    background-color: #ffffff;
+    color: black;
+}
+
+#main h2,
+#main h3,
+#main h4 {
+    color: #000;
+}
+
+/* prices */
+#prices {
+    padding-bottom: 3%;
+}
+
+#prices .row.min-height {
+    min-height: 100vh;
+}
+
+#prices .card {
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    padding: 2.25rem 0;
+    margin: 5% 0;
+    position: relative;
+    will-change: transform;
+    border: 1px solid;
+    height: 90%;
+}
+
+#prices .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+#prices .card:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+#prices .card:hover:after {
+    width: 100%;
+}
+
+#prices .card .card-header {
+    background-color: white;
+    padding-left: 2rem;
+    border-bottom: 0px;
+}
+
+#prices .card .card-title {
+    margin-bottom: 1rem;
+}
+
+#prices .card .card-block {
+    padding-top: 0;
+}
+
+#prices .card .list-group-item {
+    border: 0px;
+    padding: 0.25rem;
+}
+
+#prices .display-2 .currency {
+    font-size: 1.75rem;
+    position: relative;
+    font-weight: 400;
+    top: -35px;
+}
+
+#prices .display-2 .period {
+    font-size: 1rem;
+    color: #666;
+    letter-spacing: 0px;
+}
+
+#prices .btn {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #a6a6a6;
+    border-radius: 0;
+    padding: 0.75rem 1.25rem;
+    letter-spacing: 1px;
+}
+
+#prices .btn-gradient {
+    background-color: #f2f2f2;
+    transition: background 0.3s ease-in-out;
+}
+
+#prices .btn-gradient:hover {
+    color: white;
+    background-color: #000;
+}
+
+@media (min-width:992px) {
+    #prices .card .card-header {
+        padding-right: 30%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #prices .card {
+        margin: 3% 10%;
+    }
+}
+
+/* team */
+#team .grid .grid-item h3 {
+    color: #fff;
+    font-size: calc(12px + 4 * (100vw / 1280));
+
+}
+
+#team .grid .grid-item p {
+    color: #b2b2b2;
+    font-size: calc(10px + 4 * (100vw / 1280));
+
+}
+
+#team{
+    padding-bottom: 3%;
+}
+
+.grid {
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.grid-item .grid-link {
+    display: block;
+}
+
+.grid-item .grid-link img {
+    display: block;
+    width: 100%;
+}
+
+.grid-link {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    opacity: 0.99;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.grid-link:before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+}
+
+.grid-link .details {
+    padding: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.grid-link .details span {
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.grid-link .details .title {
+    line-height: 1;
+}
+
+.grid-link .details .info {
+    line-height: 1.2;
+    margin-top: 2%;
+}
+
+.grid-link:focus:before,
+.grid-link:focus span,
+.grid-link:hover:before,
+.grid-link:hover span {
+    opacity: 1;
+}
+
+.grid-link:focus:before,
+.grid-link:hover:before {
+    top: 50%;
+}
+
+.grid-link:focus span,
+.grid-link:hover span {
+    top: 0;
+}
+
+.grid-link:focus .title,
+.grid-link:hover .title {
+    transition-delay: 0.15s;
+}
+
+.grid-link:focus .info,
+.grid-link:hover .info {
+    transition-delay: 0.25s;
+}
+
+@media (min-width: 480px) {
+
+    .grid {
+        display: flex;
+    }
+
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-item {
+        width: 33.33333333333333%;
+    }
+}
+
+@media not screen,
+(max-width: 878px) {
+
+    .grid-link:focus:before,
+    .grid-link:focus span,
+    .grid-link:before,
+    .grid-link span {
+        opacity: 1;
+    }
+
+    .grid-link:focus:before,
+    .grid-link:before {
+        top: 50%;
+    }
+
+    .grid-link:focus span,
+    .grid-link span {
+        top: 0;
+    }
+
+    .grid-link .details span {
+        opacity: 1;
+        position: static;
+    }
+}
+
+/* contact form */
+#contact-us {
+    padding-bottom: 10%;
+}
+
+#contact-us .contact-us-tittle {
+    margin: 0 7%;
+    padding: 6% 0 4% 3%;
+    border-top: 1px solid;
+}
+
+#contact-us .contact-us-tittle h2 {
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}

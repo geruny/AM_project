@@ -1,13 +1,24 @@
-/* Section contacts */
+/* Theme's corrections */
+.intro-media {
+    background-color: #ffffff !important;
+}
 
+#page {
+    background-color: #ffffff;
+    color: black;
+}
+
+#main h2,
+#main h3,
+#main h4 {
+    color: #000 !important;
+}
+
+/* contacts */
 #contacts {
     margin-bottom: 9%;
 }
 
-#contacts h3 {
-    font-weight: 600;
-    color: #914b4b;
-}
 
 #contacts .bg-contacts {
     background-color: rgba(0, 0, 0, 0.568);
@@ -79,6 +90,7 @@
     }
 }
 
+/* contact form */
 #contact-us{
     padding-bottom: 10%;
 }

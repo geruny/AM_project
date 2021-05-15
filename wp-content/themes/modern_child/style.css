@@ -8,6 +8,7 @@ Description:  Child theme for Moder
 
 /* Theme's corrections for all pages*/
 
+/* fonts */
 @font-face {
     font-family: 'Merlo Neue Round';
     src: url('libs/webfonts/MerloNeueRound-Medium.woff2')format('woff2'),
@@ -38,6 +39,7 @@ Description:  Child theme for Moder
 h1,
 h2 {
     font-family: 'Merlo Neue Round';
+    color: #000;
 }
 
 h3,
@@ -45,29 +47,81 @@ h4,
 h5 {
     font-family: 'Circe';
     font-weight: 500;
+    color: #000;
 }
 
-html body,
 p,
 a {
     font-family: 'Circe';
     font-weight: 300;
+    color: #666;
 }
 
+h2 {
+    font-size: calc(18px + 15 * (100vw / 1280));
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: calc(14px + 4 * (100vw / 1280));
+}
+
+a:not(.site-title-text) {
+    font-size: calc(11px + 3 * (100vw / 1280));
+}
+
+.social-links .social-links-items a {
+    font-size: calc(11px + 7 * (100vw / 1280));
+}
+
+#intro-slideshow-content .intro-slideshow-item-title a {
+    font-size: calc(18px + 12 * (100vw / 1280));
+}
+
+p {
+    font-size: calc(11px + 5 * (100vw / 1280));
+}
+
+i {
+    font-size: calc(11px + 3 * (100vw / 1280));
+}
+
+a {
+    text-decoration: none !important;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+
+a:hover {
+    color: #D3C4BE;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+/* header */
 .site-header .site-header-content {
     padding: 10px 0 5px;
+    color: #000;
 }
 
 .site-header-content .social-links {
     margin-top: 3%;
 }
 
-#masthead .site-header-navigation {
-    box-shadow: none;
+.site-header-content .social-links a:hover{
+        color: #D3C4BE;
+
 }
 
-#intro-slideshow-content .intro-slideshow-item-title a {
-    font-size: calc(18px + 12 * (100vw / 1280));
+#masthead .site-header-navigation {
+    box-shadow: none;
 }
 
 .page-header,
@@ -75,8 +129,7 @@ a {
     border: none;
 }
 
-
-
+/* mobile navigation */
 @media only screen and (max-width: 54.9375em) {
     .has-navigation-mobile .main-navigation-container .menu-search {
         margin: 3% auto;
@@ -88,6 +141,20 @@ a {
     }
 }
 
+/* background sizes*/
+.site-content-inner {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+.site-content-inner .breadcrumbs-container {
+    max-width: 1200px;
+    max-width: var(--layout_width_content);
+    margin: 0 auto;
+    width: 88%;
+}
+
+/* breadcrumbs */
 .breadcrumbs {
     border-top: 1px solid;
 }
@@ -101,9 +168,7 @@ a {
 }
 
 /* footer */
-
 @media only screen and (min-width: 55em) {
-
     .front-page-section,
     .site-content {
         margin-bottom: 0;
@@ -111,7 +176,6 @@ a {
 }
 
 @media only screen and (min-width: 42em) {
-
     .front-page-section,
     .site-content {
         margin-bottom: 0;
@@ -183,11 +247,11 @@ a {
 
 .site-footer .back-to-top a:hover,
 #nav_menu-1 a:hover {
-    color: #ff4a5b;
+    color: #D3C4BE;
+
 }
 
 @media (max-width: 519px) {
-
     .site-footer .site-info-inner .site-info {
         order: 1;
     }
@@ -210,28 +274,7 @@ a {
     background-color: rgba(0, 0, 0, 0.568);
 }
 
-a {
-    text-decoration: none !important;
-    transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -webkit-transition: all 0.6s;
-}
-
-a:hover {
-    /* color: #ff4a5b; */
-    color: #D3C4BE;
-    transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -webkit-transition: all 0.6s;
-}
-
-a:focus,
-button:focus {
-    outline: none;
-}
-
 /* contact form */
-
 .wpcf7 {
     margin-left: 10%;
     flex: auto;
@@ -258,31 +301,4 @@ button:focus {
     padding: 0.62em;
     display: inline;
     width: 200px;
-}
-
-/* adaptive fonts*/
-
-h2 {
-    font-size: calc(18px + 15 * (100vw / 1280));
-    margin-bottom: 0;
-}
-
-h3 {
-    font-size: calc(14px + 4 * (100vw / 1280));
-}
-
-a:not(.site-title-text) {
-    font-size: calc(11px + 3 * (100vw / 1280));
-}
-
-.social-links .social-links-items a {
-    font-size: calc(11px + 7 * (100vw / 1280));
-}
-
-p {
-    font-size: calc(11px + 5 * (100vw / 1280));
-}
-
-i {
-    font-size: calc(11px + 3 * (100vw / 1280));
 }

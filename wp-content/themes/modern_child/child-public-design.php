@@ -2,12 +2,10 @@
 
 get_header();
 
-while (have_posts()) : the_post();
-    do_action('tha_entry_before');
 ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <section id="design">
+        <section id="design-intro">
             <div class="container">
                 <div class="row design-entry">
                     <div class="col-md-9">
@@ -23,6 +21,10 @@ while (have_posts()) : the_post();
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
                 <div class="grid">
                     <div class="grid-item">
                         <a class="grid-link" href="">
@@ -30,9 +32,6 @@ while (have_posts()) : the_post();
                             <div class="details">
                                 <span class="title">
                                     <h3>Burgas</h3>
-                                </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
                                 </span>
                             </div>
                         </a>
@@ -43,9 +42,6 @@ while (have_posts()) : the_post();
                             <div class="details">
                                 <span class="title">
                                     <h3>Антикафе</h3>
-                                </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
                                 </span>
                             </div>
                         </a>
@@ -60,7 +56,6 @@ while (have_posts()) : the_post();
     </article>
 
 <?php
-    do_action('tha_entry_after');
-endwhile;
+
 
 get_footer();

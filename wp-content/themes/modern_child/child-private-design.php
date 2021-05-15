@@ -2,12 +2,10 @@
 
 get_header();
 
-while (have_posts()) : the_post();
-    do_action('tha_entry_before');
 ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <section id="design">
+        <section id="design-intro">
             <div class="container">
                 <div class="row design-entry">
                     <div class="col-md-9">
@@ -23,6 +21,10 @@ while (have_posts()) : the_post();
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
                 <div class="grid">
                     <div class="grid-item">
                         <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=1">
@@ -31,9 +33,9 @@ while (have_posts()) : the_post();
                                 <span class="title">
                                     <h3>ЖК Галактика</h3>
                                 </span>
-                                <span class="info">
+                                <!-- <span class="info">
                                     <p>Quisque vel felis lectus donec vitae dapibus magna</p>
-                                </span>
+                                </span> -->
                             </div>
                         </a>
                     </div>
@@ -43,9 +45,6 @@ while (have_posts()) : the_post();
                             <div class="details">
                                 <span class="title">
                                     <h3>ЖК Русский дом</h3>
-                                </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
                                 </span>
                             </div>
                         </a>
@@ -57,9 +56,6 @@ while (have_posts()) : the_post();
                                 <span class="title">
                                     <h3>ЖК Символ</h3>
                                 </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
-                                </span>
                             </div>
                         </a>
                     </div>
@@ -69,9 +65,6 @@ while (have_posts()) : the_post();
                             <div class="details">
                                 <span class="title">
                                     <h3>ЖК Твин Пикс</h3>
-                                </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
                                 </span>
                             </div>
                         </a>
@@ -83,9 +76,6 @@ while (have_posts()) : the_post();
                                 <span class="title">
                                     <h3>ЖК Цивилизация</h3>
                                 </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
-                                </span>
                             </div>
                         </a>
                     </div>
@@ -94,9 +84,6 @@ while (have_posts()) : the_post();
                             <div class="details">
                                 <span class="title">
                                     <h3>Ломаная</h3>
-                                </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
                                 </span>
                             </div>
                         </a>
@@ -107,9 +94,6 @@ while (have_posts()) : the_post();
                             <div class="details">
                                 <span class="title">
                                     <h3>Фонтанка</h3>
-                                </span>
-                                <span class="info">
-                                    <p>Quisque vel felis lectus donec vitae dapibus magna</p>
                                 </span>
                             </div>
                         </a>
@@ -125,7 +109,5 @@ while (have_posts()) : the_post();
     </article>
 
 <?php
-    do_action('tha_entry_after');
-endwhile;
 
 get_footer();

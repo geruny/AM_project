@@ -1,7 +1,11 @@
 /* Theme's corrections */
-
 .site-content {
     position: static !important;
+}
+
+.site-header .site-header-content,
+.site-description {
+    color: #fff !important;
 }
 
 .intro-container .intro-title {
@@ -21,42 +25,26 @@ p.intro-slideshow-item-title {
     cursor: auto;
 }
 
-.site-content-inner {
-    max-width: none !important;
-    width: 100% !important;
-}
-
 .title {
     margin: 5% 0;
     margin-left: 8%;
     text-transform: uppercase;
 }
 
-.title h2{
+.title h2 {
     color: black !important;
 }
 
-.title-border{
-        margin: 0 7%;
-        border-top: 1px solid;
+.title-border {
+    margin: 0 7%;
+    border-top: 1px solid;
 }
 
 /* About us section*/
-
 #about-us-block {
     margin: 8% 0;
     position: relative;
 }
-
-/* #about-us-block {
-    padding: 8% 0;
-    position: relative;
-    background: #000000;
-    background: -moz-radial-gradient(center, ellipse cover, #000000, #ffffff);
-    background: -webkit-linear-gradient(top, #000000, #ffffff);
-    background: -o-linear-gradient(top, #000000, #ffffff);
-    background: -ms-linear-gradient(top, #000000, #ffffff);
-} */
 
 #about-us-block h2 {
     text-transform: uppercase;
@@ -79,11 +67,12 @@ p.intro-slideshow-item-title {
     transition: all 0.6s;
     -moz-transition: all 0.6s;
     -webkit-transition: all 0.6s;
+    color: #fff;
 }
 
 #about-us-block a:hover {
-    border: 2px #ff4a5b solid;
-    color: #fff;
+    border: 2px #D3C4BE solid;
+    color: #D3C4BE;
     letter-spacing: 0.5px;
     transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -98,14 +87,13 @@ p.intro-slideshow-item-title {
 }
 
 /* Design section*/
-
 #choose-design {
     padding: 4% 0 8%;
     background-color: #ffffff;
 }
 
-#choose-design .title p{
-   text-transform: none;
+#choose-design .title p {
+    text-transform: none;
 }
 
 #choose-design .interior-block-container {
@@ -146,9 +134,9 @@ p.intro-slideshow-item-title {
 }
 
 #choose-design .interior-card-wrap:hover .interior-card {
-    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1);
     box-shadow: rgba(255, 255, 255, 0) 0 0 20px 5px,
-        #ff4a5b 0 0 0 1px,
+        #000000 0 0 0 2px,
         rgba(0, 0, 0, 0.075) 0 10px 30px 0,
         inset rgba(51, 51, 51, 0.068) 0 0 0 5px,
         inset rgba(255, 74, 91, 0.25) 0px 0px 51px -20px;
@@ -159,7 +147,7 @@ p.intro-slideshow-item-title {
     flex: 0 0 240px;
     width: 240px;
     height: 320px;
-        background-color: rgb(0 0 0 / 70%);
+    background-color: rgb(0 0 0 / 70%);
     overflow: hidden;
     border-radius: 10px;
     /* 0 20px 50px 0 */
@@ -199,6 +187,7 @@ p.intro-slideshow-item-title {
     opacity: 0;
     text-shadow: black 0 3px 3px;
     transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    color: #fff;
 }
 
 #choose-design .interior-card-info * {
@@ -284,13 +273,7 @@ p.intro-slideshow-item-title {
 }
 
 /* Work stages section */
-
 #process-block {
-    /* background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative; */
     background-color: #ffffff;
 }
 
@@ -304,14 +287,12 @@ p.intro-slideshow-item-title {
 }
 
 .cd-container {
-    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
 }
 
 .cd-container::after {
-    /* clearfix */
     content: "";
     display: table;
     clear: both;
@@ -329,7 +310,6 @@ p.intro-slideshow-item-title {
 }
 
 #cd-timeline::before {
-    /* this is the vertical line */
     content: "";
     position: absolute;
     top: 0;
@@ -437,10 +417,6 @@ p.intro-slideshow-item-title {
     display: table;
 }
 
-/* .cd-timeline-content h3 {
-    color: #303e49;
-} */
-
 .cd-timeline-content ol {
     margin: 1em;
     list-style-type: disc;
@@ -454,7 +430,6 @@ p.intro-slideshow-item-title {
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    /* border-right: 7px solid #000000; */
 }
 
 @media only screen and (min-width: 1170px) {
@@ -468,7 +443,6 @@ p.intro-slideshow-item-title {
         top: 24px;
         left: 100%;
         border-color: transparent;
-        /* border-left-color: #000000; */
     }
 
     .cd-timeline-block:nth-child(even) .cd-timeline-content {
@@ -480,16 +454,10 @@ p.intro-slideshow-item-title {
         left: auto;
         right: 100%;
         border-color: transparent;
-        /* border-right-color: #000000; */
     }
 }
 
 /* Section contacts */
-
-/* #contacts {
-    margin: 3% 0;
-} */
-
 #contacts {
     background-size: cover;
     background-position: center;
@@ -522,7 +490,8 @@ p.intro-slideshow-item-title {
 }
 
 #contacts a:hover {
-    color: #ff4a5b;
+    color: #D3C4BE;
+
     transition: all 0.6s;
     -moz-transition: all 0.6s;
     -webkit-transition: all 0.6s;
@@ -604,6 +573,7 @@ p.intro-slideshow-item-title {
     }
 }
 
+/* animations */
 @keyframes show {
     from {
         opacity: 0;
