@@ -4,19 +4,22 @@ get_header();
 
 ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <section id="design">
-            <div class="container">
-                <div class="row design-entry">
-                    <div class="col-md">
-                        <h2>Архитектура</h2>
-                        <p class="description">Выберите проект для просмотра</p>
-                    </div>
-                </div>
-                <P style="height: 200px; font-size:48px; margin-left:100px;">Здесь пусто...</P>
+<section id="design-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto">
+                <a href="<?php echo get_site_url(null, 'public-design', 'relative'); ?>">Коммерческие</a>
             </div>
-        </section>
-    </article>
+            <div class="col-auto">
+                <a href="<?php echo get_site_url(null, 'private-design', 'relative'); ?>">Частный</a>
+            </div>
+            <div class="col-auto">
+                <a class="active" href="#">Архитектура</a>
+            </div>
+        </div>
+        <h2 style="color: #D3C4BE;">Здесь пусто...</h2>
+    </div>
+</section>
 
 <?php
 

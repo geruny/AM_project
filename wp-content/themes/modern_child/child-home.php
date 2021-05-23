@@ -203,7 +203,6 @@ while (have_posts()) : the_post();
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="row wow fadeInUp map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.2313212808774!2d30.31046581606245!3d59.92830368187245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963102f889cdc7%3A0xc5db47709b2b1513!2z0JPRgNCw0LbQtNCw0L3RgdC60LDRjyDRg9C7LiwgMTMtMTUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTAwMzE!5e0!3m2!1sru!2sru!4v1614794246252!5m2!1sru!2sru" width="" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

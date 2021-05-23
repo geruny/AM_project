@@ -278,18 +278,3 @@
     }
 }
 
-/* contact form */
-#contact-us {
-    padding-bottom: 10%;
-}
-
-#contact-us .contact-us-tittle {
-    margin: 0 7%;
-    padding: 6% 0 4% 3%;
-    border-top: 1px solid;
-}
-
-#contact-us .contact-us-tittle h2 {
-    margin-bottom: 1%;
-    text-transform: uppercase;
-}
