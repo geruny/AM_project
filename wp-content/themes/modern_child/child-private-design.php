@@ -43,7 +43,7 @@ get_header();
                 </a>
             </div>
             <div class="grid-item">
-                <a class="grid-link" href="">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=3">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/simvol.jpg" alt="" />
                     <div class="details">
                         <span class="title">
@@ -53,7 +53,7 @@ get_header();
                 </a>
             </div>
             <div class="grid-item">
-                <a class="grid-link" href="">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=4">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/twin_pix.jpg" alt="" />
                     <div class="details">
                         <span class="title">
@@ -62,7 +62,8 @@ get_header();
                     </div>
                 </a>
             </div>
-            <div class="grid-item"> <a class="grid-link" href="">
+            <div class="grid-item">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=7">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/lomanaya.jpg" alt="" />
                     <div class="details">
                         <span class="title">
@@ -72,7 +73,7 @@ get_header();
                 </a>
             </div>
             <div class="grid-item">
-                <a class="grid-link" href="">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=5">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/civilization.jpg" alt="" />
                     <div class="details">
                         <span class="title">
@@ -82,7 +83,7 @@ get_header();
                 </a>
             </div>
             <div class="grid-item">
-                <a class="grid-link" href="">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=6">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/fontanka.jpg" alt="" />
                     <div class="details">
                         <span class="title">

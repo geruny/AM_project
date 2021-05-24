@@ -23,7 +23,7 @@ get_header();
     <div class="container">
         <div class="grid">
             <div class="grid-item">
-                <a class="grid-link" href="">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=8">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/public_design/burgas.jpg" alt="" />
                     <div class="details">
                         <span class="title">
@@ -33,7 +33,7 @@ get_header();
                 </a>
             </div>
             <div class="grid-item">
-                <a class="grid-link" href="">
+                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=9">
                     <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/public_design/anticofe.jpg" alt="" />
                     <div class="details">
                         <span class="title">

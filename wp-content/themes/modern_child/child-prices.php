@@ -2,8 +2,6 @@
 
 get_header();
 
-// while (have_posts()) : the_post();
-//     do_action('tha_entry_before');
 ?>
 
 <section id="prices">
@@ -163,7 +161,7 @@ get_header();
     </div>
 </section>
 
-<section id="team">
+<section id="team" name="team">
     <div class="container">
         <div class="row wow fadeInUp">
             <div class="col">
@@ -280,7 +278,5 @@ get_header();
 
 
 <?php
-//     do_action('tha_entry_after');
-// endwhile;
 
 get_footer();

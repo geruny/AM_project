@@ -1,17 +1,8 @@
 /* Theme's corrections */
-.intro-media {
-    background-color: #1a1a1a !important;
-}
-
-#page {
-    background-color: #1a1a1a;
-    color: fff;
-}
-
-.site-header .site-header-content,
+/* .site-header .site-header-content,
 .site-description {
     color: #fff !important;
-}
+} */
 
 #main h2,
 #main h3,
@@ -19,15 +10,8 @@
     color: #fff;
 }
 
-/* #contacts{
-background: rgb(26, 26, 26);
-background: linear-gradient(0deg, rgba(26, 26, 26, 1) 30%, rgba(255, 255, 255, 1) 100%);
-} */
-
 #contacts {
     padding-bottom: 3%;
-    /* background: rgb(234, 236, 238);
-    background: linear-gradient(0deg, rgba(234, 236, 238, 1) 70%, rgba(255, 255, 255, 1) 100%); */
 }
 
 #contacts a {
@@ -126,4 +110,9 @@ background: linear-gradient(0deg, rgba(26, 26, 26, 1) 30%, rgba(255, 255, 255, 1
     #contacts h3 {
         margin-bottom: 0;
     }
+}
+
+/* form */
+#contact-us{
+    background:none !important;
 }

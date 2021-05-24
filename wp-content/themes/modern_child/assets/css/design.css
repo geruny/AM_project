@@ -8,6 +8,10 @@
     color: black;
 }
 
+.site-header .site-header-content {
+    color: #000 !important;
+}
+
 /* design */
 #design-intro .container{
       max-width: 100%;

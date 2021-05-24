@@ -4,8 +4,6 @@ get_header();
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
     <section id="contacts">
         <div class="container">
             <div class="row g-0 gy-3">
@@ -67,8 +65,6 @@ get_header();
     <script>
         new WOW().init();
     </script>
-
-</article>
 
 <?php
 

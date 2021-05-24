@@ -8,6 +8,10 @@
     color: black;
 }
 
+.site-header .site-header-content {
+    color: #000 !important;
+}
+
 #main h2,
 #main h3,
 #main h4 {

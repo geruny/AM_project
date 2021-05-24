@@ -46,7 +46,7 @@ function modern_child_theme_scripts()
             '/libs/js/vue.min.js', array(), '2.6.12', false);
     }
 
-    if (is_page('private-design') || is_page('public-design') || is_page('architecture')) {
+    if (is_page(array('private-design', 'public-design', 'architecture')))  {
         wp_enqueue_style('design', get_stylesheet_directory_uri() .
             '/assets/css/design.css', array(), null, 'all');
 

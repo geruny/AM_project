@@ -3,11 +3,6 @@
     position: static !important;
 }
 
-.site-header .site-header-content,
-.site-description {
-    color: #fff !important;
-}
-
 .intro-container .intro-title {
     padding-top: 25%;
     border-top: 1px solid;
@@ -54,6 +49,7 @@ p.intro-slideshow-item-title {
     max-width: 800px;
     margin: 0 auto;
     margin-top: 5%;
+    color: #fff;
 }
 
 #about-us-block a {
@@ -275,6 +271,7 @@ p.intro-slideshow-item-title {
 /* Work stages section */
 #process-block {
     background-color: #ffffff;
+    padding-bottom: 4%;
 }
 
 #process-block-bg {
@@ -477,9 +474,12 @@ p.intro-slideshow-item-title {
     padding: 3% 0;
 }
 
-#contacts h3,
-#contacts h2 {
+#contacts h2{
     color: #ffffff !important;
+}
+
+#contacts h3 {
+color: #666 !important;
 }
 
 #contacts a {

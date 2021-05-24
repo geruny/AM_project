@@ -1,15 +1,49 @@
+/* Theme's corrections */
+.intro-media {
+    background-color: #ffffff !important;
+}
+
+#page {
+    background-color: #ffffff;
+    color: black;
+}
+
+.site-header .site-header-content {
+    color: #000 !important;
+}
+
+#main h2,
+#main h3,
+#main h4 {
+    color: #000;
+}
+
+/* project decription */
 #project {
     margin-bottom: 9%;
+}
+
+#project .project-title{
+    padding-left: 4%;
+    padding-bottom: 1%;
+    letter-spacing: 2px;
+}
+
+#project .project-title h2{
+    color: #666;
 }
 
 .slider {
     padding: 0 3%;
 }
 
+.project-info span{
+    font-weight: 500;
+}
+
 .project-info p {
     margin-bottom: 2%;
     padding-left: 12%;
-    text-transform: uppercase;
 }
 
 .project-description {
@@ -56,17 +90,3 @@
     }
 }
 
-#contact-us{
-    padding-bottom: 10%;
-}
-
-#contact-us .contact-us-tittle {
-    margin: 0 7%;
-    padding: 6% 0 4% 3%;
-    border-top: 1px solid;
-}
-
-#contact-us .contact-us-tittle h2 {
-    margin-bottom: 1%;
-    text-transform: uppercase;
-}
