@@ -282,3 +282,14 @@
     }
 }
 
+/* calculator */
+#calculator .calcArea {
+    margin: 5% 0;
+    padding: 2% 0;
+    padding-left: 3%;
+    border-left: 1px solid #000;
+}
+
+#calculator #calcForm{
+    padding-top: 2%;
+}

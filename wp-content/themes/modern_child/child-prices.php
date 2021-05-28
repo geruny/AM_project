@@ -11,9 +11,7 @@ get_header();
                 <h2>Выберите тариф для себя</h2>
             </div>
         </div>
-
         <div class="row flex-items-sm-middle flex-items-sm-center min-height wow fadeInUp">
-
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="card text-sm-center">
                     <div class="card-header">
@@ -34,7 +32,7 @@ get_header();
                                 <p>Строительные чертежи</p>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                        <a value="2500" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +64,7 @@ get_header();
                                 </p>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                        <a value="3200" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +102,7 @@ get_header();
                                 <p>Декорирование проекта</p>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                        <a value="4500" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +126,7 @@ get_header();
                                 <p>Контроль этапности стройки</p>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                        <a value="30000" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +150,7 @@ get_header();
                                 <p>Работа с рекламациями</p>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-gradient mt-2">Choose Plan</a>
+                        <a value="20000" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -250,6 +248,43 @@ get_header();
                         </span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="calculator">
+    <div class="container">
+        <div class="calcArea">
+            <div class="row">
+                <h2>Расчитайте цену своего проекта</h2>
+            </div>
+            <div class="row">
+                <form id="calcForm">
+                    <div class="input-group">
+                        <label class="input-group-text" for="selectPlan">Тариф</label>
+                        <select class="form-select" id="selectPlan">
+                            <option selected value="2500">Стандартный пакет</option>
+                            <option value="3200">Полный пакет</option>
+                            <option value="4500">Премиум пакет</option>
+                            <option value="30000">Авторский надзор</option>
+                            <option value="20000">Комплектация</option>
+                        </select>
+                    </div>
+
+                    <label for="rangSquare" class="form-label">Выберите площадь</label>
+                    <div id="rangSquare"></div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroup-sizing">Значение ползунка:</span>
+                        <input type="text" id="rangSquareValue" class="form-control" aria-describedby="inputGroup-sizing">
+                    </div>
+
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Предварительная стоймость</span>
+                        <input type="text" id="output-price" class="form-control" aria-describedby="inputGroup-sizing-lg">
+                    </div>
+
+                </form>
             </div>
         </div>
     </div>

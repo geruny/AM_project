@@ -46,7 +46,7 @@ function modern_child_theme_scripts()
             '/libs/js/vue.min.js', array(), '2.6.12', false);
     }
 
-    if (is_page(array('private-design', 'public-design', 'architecture')))  {
+    if (is_page(array('private-design', 'public-design', 'architecture'))) {
         wp_enqueue_style('design', get_stylesheet_directory_uri() .
             '/assets/css/design.css', array(), null, 'all');
 
@@ -74,9 +74,21 @@ function modern_child_theme_scripts()
     if (is_page('prices')) {
         wp_enqueue_style('prices', get_stylesheet_directory_uri() .
             '/assets/css/prices.css', array(), null, 'all');
-            
+
+        wp_enqueue_style('jquery-ui', get_stylesheet_directory_uri() .
+        '/libs/css/jquery-ui.css', array(), null, 'all');
+
+        wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() .
+            '/libs/js/jquery-ui.min.js', array('jquery'), null, true);
+
+        wp_enqueue_script('jquery.ui.touch-punch', get_stylesheet_directory_uri() .
+            '/libs/js/jquery.ui.touch-punch.min.js', array('jquery'), null, true);
+
         wp_enqueue_script('design', get_stylesheet_directory_uri() .
-        '/assets/js/design.js', array(), null, true);
+            '/assets/js/design.js', array('jquery'), null, true);
+
+        wp_enqueue_script('prices', get_stylesheet_directory_uri() .
+            '/assets/js/prices.js', array('jquery-ui'), null, true);
 
         // masonry & imagesloaded for gallery
         wp_enqueue_script('imagesloaded', get_stylesheet_directory_uri() .
