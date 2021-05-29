@@ -139,7 +139,7 @@
 
 }
 
-#team{
+#team {
     padding-bottom: 3%;
 }
 
@@ -286,10 +286,81 @@
 #calculator .calcArea {
     margin: 5% 0;
     padding: 2% 0;
-    padding-left: 3%;
+    padding-left: 5%;
     border-left: 1px solid #000;
+    margin-right: 15%;
 }
 
-#calculator #calcForm{
+#calculator #calcForm {
     padding-top: 2%;
+}
+
+#selectPlan {
+    box-shadow: none;
+}
+
+#selectPlan:focus {
+    border-color: #000;
+}
+
+#selectPlan option:hover,
+#selectPlan option:checked {
+    background: #000;
+}
+
+#calcForm .plans {
+    padding-bottom: 4%;
+}
+
+#calcForm .plans input {
+    background: #000;
+    color: #fff;
+}
+
+#calcForm .square input,
+#calcForm .price input {
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: calc(18px + 5 * (100vw / 1280));
+    color: #666;
+
+}
+
+#calcForm .price input {
+    width: 86%;
+}
+
+#calcForm .square .btm,
+#calcForm .plans p {
+    padding-bottom: 2%;
+}
+
+#calcForm .price {
+    padding-top: 4%;
+}
+
+#calcForm .d-in {
+    display: flex;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    width: 1%;
+    background: #000;
+}
+
+.ui-slider.ui-slider-horizontal {
+    background: #00000008;
+    height: 12px;
+}
+
+.ui-state-focus,
+.ui-widget-content .ui-state-focus {
+    background: #000;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+    border: 1px solid #000;
 }

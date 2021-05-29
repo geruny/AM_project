@@ -255,35 +255,51 @@ get_header();
 
 <section id="calculator">
     <div class="container">
-        <div class="calcArea">
+        <div class="calcArea wow fadeInUp">
             <div class="row">
                 <h2>Расчитайте цену своего проекта</h2>
             </div>
             <div class="row">
                 <form id="calcForm">
-                    <div class="input-group">
-                        <label class="input-group-text" for="selectPlan">Тариф</label>
-                        <select class="form-select" id="selectPlan">
-                            <option selected value="2500">Стандартный пакет</option>
-                            <option value="3200">Полный пакет</option>
-                            <option value="4500">Премиум пакет</option>
-                            <option value="30000">Авторский надзор</option>
-                            <option value="20000">Комплектация</option>
-                        </select>
+                    <div class="plans">
+                        <div class="row">
+                            <p>Тариф</p>
+                        </div>
+                        <div class="row">
+                            <select class="form-select" id="selectPlan">
+                                <option selected value="2500">Стандартный пакет</option>
+                                <option value="3200">Полный пакет</option>
+                                <option value="4500">Премиум пакет</option>
+                                <option value="30000">Авторский надзор</option>
+                                <option value="20000">Комплектация</option>
+                            </select>
+                        </div>
                     </div>
-
-                    <label for="rangSquare" class="form-label">Выберите площадь</label>
-                    <div id="rangSquare"></div>
-                    <div class="input-group">
-                        <span class="input-group-text" id="inputGroup-sizing">Значение ползунка:</span>
-                        <input type="text" id="rangSquareValue" class="form-control" aria-describedby="inputGroup-sizing">
+                    <div class="square">
+                        <div class="row align-items-center btm">
+                            <div class="col-2">
+                                <p>Выберите площадь</p>
+                            </div>
+                            <div class="col-1 d-flex align-items-center">
+                                <input type="text" id="rangSquareValue" class="form-control" aria-describedby="inputGroup-sizing" disabled>
+                                <p>м<sup>2</sup></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="rangSquare"></div>
+                        </div>
                     </div>
-
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-text" id="inputGroup-sizing-lg">Предварительная стоймость</span>
-                        <input type="text" id="output-price" class="form-control" aria-describedby="inputGroup-sizing-lg">
+                    <div class="price">
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <p>Предварительная стоймость</p>
+                            </div>
+                            <div class="col-2 d-flex align-items-center">
+                                <input type="text" id="output-price" class="form-control" aria-describedby="inputGroup-sizing-lg" disabled>
+                                <p>₽</p>
+                            </div>
+                        </div>
                     </div>
-
                 </form>
             </div>
         </div>

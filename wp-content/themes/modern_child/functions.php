@@ -72,11 +72,11 @@ function modern_child_theme_scripts()
     }
 
     if (is_page('prices')) {
-        wp_enqueue_style('prices', get_stylesheet_directory_uri() .
-            '/assets/css/prices.css', array(), null, 'all');
-
         wp_enqueue_style('jquery-ui', get_stylesheet_directory_uri() .
         '/libs/css/jquery-ui.css', array(), null, 'all');
+
+        wp_enqueue_style('prices', get_stylesheet_directory_uri() .
+        '/assets/css/prices.css', array(), null, 'all');
 
         wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() .
             '/libs/js/jquery-ui.min.js', array('jquery'), null, true);
