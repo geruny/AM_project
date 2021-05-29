@@ -1,6 +1,6 @@
 (function ($) {
     $(document).ready(function () {
-        
+
         $(".cardHref").click(function () {
 
             let cardValue = $(this).attr("value");

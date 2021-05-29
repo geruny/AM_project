@@ -1,7 +1,6 @@
 <?php
 
 get_header();
-
 ?>
 
 <section id="design-intro">
@@ -19,37 +18,32 @@ get_header();
         </div>
     </div>
 </section>
+
 <section id="projects">
     <div class="container">
         <div class="grid">
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=8">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/public_design/burgas.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Burgas</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=9">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/public_design/anticofe.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Антикафе</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
+            <?
+            $grid_items = getData("wp_public_projects");
+            foreach ($grid_items as $item) :
+            ?>
+                <div class="grid-item">
+                    <a class="grid-link" href="<?= get_site_url(null, 'project-card', 'relative'); ?>?id=<?= $item->id_project ?>">
+                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/public_design/<?= $item->img ?>.jpg" alt="<?= $item->img ?>" />
+                        <div class="details">
+                            <span class="title">
+                                <h3><?= $item->title ?></h3>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            <? endforeach; ?>
         </div>
     </div>
 </section>
+
 <script>
     new WOW().init();
 </script>
 
 <?php
-
-
 get_footer();

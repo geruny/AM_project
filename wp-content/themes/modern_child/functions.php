@@ -164,3 +164,11 @@ function getDataProject()
 
     return $project;
 }
+
+function getData($table)
+{
+    global $wpdb;
+    $data = $wpdb->get_results("SELECT * FROM $table");
+
+    return $data;
+}

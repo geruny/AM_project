@@ -1,7 +1,6 @@
 <?php
 
 get_header();
-
 ?>
 
 <section id="design-intro">
@@ -19,79 +18,25 @@ get_header();
         </div>
     </div>
 </section>
+
 <section id="projects">
     <div class="container">
         <div class="grid">
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=1">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/galactica.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>ЖК Галактика</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=2">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/rus_home.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>ЖК Русский дом</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=3">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/simvol.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>ЖК Символ</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=4">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/twin_pix.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>ЖК Твин Пикс</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=7">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/lomanaya.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Ломаная</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=5">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/civilization.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>ЖК Цивилизация</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a class="grid-link" href="<?php echo get_site_url(null, 'project-card', 'relative'); ?>?id=6">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/private_design/fontanka.jpg" alt="" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Фонтанка</h3>
-                        </span>
-                    </div>
-                </a>
-            </div>
+            <?
+            $grid_items = getData("wp_private_projects");
+            foreach ($grid_items as $item) :
+            ?>
+                <div class="grid-item">
+                    <a class="grid-link" href="<?= get_site_url(null, 'project-card', 'relative'); ?>?id=<?= $item->id_project ?>">
+                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/private_design/<?= $item->img ?>.jpg" alt="<?= $item->img ?>" />
+                        <div class="details">
+                            <span class="title">
+                                <h3><?= $item->title ?></h3>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            <? endforeach; ?>
         </div>
     </div>
 </section>
@@ -101,5 +46,4 @@ get_header();
 </script>
 
 <?php
-
 get_footer();

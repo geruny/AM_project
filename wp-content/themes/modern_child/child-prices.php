@@ -1,7 +1,6 @@
 <?php
 
 get_header();
-
 ?>
 
 <section id="prices">
@@ -167,88 +166,24 @@ get_header();
             </div>
         </div>
         <div class="grid wow fadeInUp">
-            <div class="grid-item">
-                <div class="grid-link">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prices/Anna_Stukalova.jpg" alt="Anna Stukalova" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Стукалова Анна</h3>
-                        </span>
-                        <span class="info">
-                            <p>Ведущий дизайнер</br>
-                                co-founder of AM | DESIGN STUDIO
-                            </p>
-                        </span>
+            <?
+            $grid_items = getData("wp_prices_team");
+            foreach ($grid_items as $item) :
+            ?>
+                <div class="grid-item">
+                    <div class="grid-link">
+                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/prices/<?= $item->img ?>.jpg" alt="<?= $item->img ?>" />
+                        <div class="details">
+                            <span class="title">
+                                <h3><?= $item->title ?></h3>
+                            </span>
+                            <span class="info">
+                                <p><?= $item->info ?></p>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-link">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prices/Marina_Sorsomatyan.jpg" alt="Marina Sorsomatyan" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Сорсоматьян Мария</h3>
-                        </span>
-                        <span class="info">
-                            <p>Ведущий дизайнер</br>
-                                co-founder of AM | DESIGN STUDIO
-                            </p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-link">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prices/Kate_Voytovich.jpg" alt="Kate Voytovich" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Войтович Екатерина</h3>
-                        </span>
-                        <span class="info">
-                            <p>Комплектатор</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-link">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prices/Anna_Kayasheva.jpg" alt="Anna Kayasheva" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Каяшева Анна</h3>
-                        </span>
-                        <span class="info">
-                            <p>Проектировщик</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-link">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prices/Nikolay_Limansky.jpg" alt="Nikolay Limansky" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Лиманский Николай</h3>
-                        </span>
-                        <span class="info">
-                            <p>Визуализатор</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-link">
-                    <img class="grid-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/prices/Nikita_Nikitin.jpg" alt="Nikita Nikitin" />
-                    <div class="details">
-                        <span class="title">
-                            <h3>Никитин Никита</h3>
-                        </span>
-                        <span class="info">
-                            <p>Ведущий инженер</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
+            <? endforeach; ?>
         </div>
     </div>
 </section>
@@ -307,27 +242,12 @@ get_header();
 </section>
 
 <section id="contact-us">
-    <div class="container">
-        <div class="contact-us-tittle">
-            <div class="row wow fadeInUp">
-                <h2>Обратный звонок</h2>
-                <p>Оставте свой телефон и мы вам перезвоним</p>
-            </div>
-        </div>
-        <div class="row wow fadeInUp">
-            <?php
-            echo do_shortcode('[contact-form-7 id="694" title="Контактная форма"]');
-            ?>
-        </div>
-    </div>
+    <? get_template_part('template-parts/frontend/contact-us'); ?>
 </section>
 
 <script>
     new WOW().init();
 </script>
 
-
-
 <?php
-
 get_footer();

@@ -1,7 +1,6 @@
 <?php
 
 get_header();
-
 ?>
 
 <section id="design-intro">
@@ -22,5 +21,4 @@ get_header();
 </section>
 
 <?php
-
 get_footer();
