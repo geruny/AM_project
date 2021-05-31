@@ -211,12 +211,14 @@ get_header();
                         </div>
                     </div>
                     <div class="square">
-                        <div class="row align-items-center btm">
-                            <div class="col-2">
+                        <div class="row align-items-center justify-content-start g-0 btm">
+                            <div class="col-xl-2 col-md-3 col-5">
                                 <p>Выберите площадь</p>
                             </div>
-                            <div class="col-1 d-flex align-items-center">
+                            <div class="col-lg-1 col-sm-2 col-3">
                                 <input type="text" id="rangSquareValue" class="form-control" aria-describedby="inputGroup-sizing" disabled>
+                            </div>
+                            <div class="col">
                                 <p>м<sup>2</sup></p>
                             </div>
                         </div>
@@ -225,14 +227,10 @@ get_header();
                         </div>
                     </div>
                     <div class="price">
-                        <div class="row align-items-center">
-                            <div class="col-3">
-                                <p>Предварительная стоймость</p>
-                            </div>
-                            <div class="col-2 d-flex align-items-center">
-                                <input type="text" id="output-price" class="form-control" aria-describedby="inputGroup-sizing-lg" disabled>
-                                <p>₽</p>
-                            </div>
+                        <div class="row d-flex align-items-center justify-content-start g-0">
+                            <p class="p-content-1">Предварительная стоймость</p>
+                            <input type="text" id="output-price" class="form-control" aria-describedby="inputGroup-sizing-lg" disabled>
+                            <p class="p-content-2">₽</p>
                         </div>
                     </div>
                 </form>

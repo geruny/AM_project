@@ -15,8 +15,7 @@
                 </div>
             </div>
             <div class="col-12 col-md border-left">
-                <h3>Телефоны:</h3>
-                <a class="phones" href="tel:+79817455467"><i class="fas fa-phone-alt"></i>+7(981)745-54-67</a>
+                <h3>Телефон:</h3>
                 <a class="phones" href="tel:+79818752531"><i class="fas fa-phone-alt"></i>+7(981)875-25-31</a>
             </div>
             <div class="col-12 col-md border-left">

@@ -324,12 +324,14 @@
     font-weight: 700;
     font-size: calc(18px + 5 * (100vw / 1280));
     color: #666;
+    padding-right: 0;
 
 }
 
+/* 
 #calcForm .price input {
     width: 86%;
-}
+} */
 
 #calcForm .square .btm,
 #calcForm .plans p {
@@ -340,8 +342,45 @@
     padding-top: 4%;
 }
 
-#calcForm .d-in {
-    display: flex;
+#calcForm .p-content-1,
+#calcForm .p-content-2 {
+    display: contents;
+}
+
+#calcForm .price input {
+    padding-left: 5%;
+    width: 19%;
+}
+
+@media (max-width: 992px) {
+
+    #calcForm .price input {
+        padding-left: 5%;
+        width: 29%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #calcForm .price input {
+        padding-left: 5%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 335px) {
+
+    #calcForm .price input {
+        padding-left: 5%;
+        width: 40%;
+    }
+
+    #calcForm .price .p-content-1 {
+        display: inline;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
 }
 
 .ui-state-default,
