@@ -71,7 +71,7 @@ if ('-' === $site_info_text) {
 			</div>
 			<div class="back-to-top">
 				<a href="#page">На верх
-					<i class="fa fa-chevron-up" aria-hidden="true"></i>
+					<i class="fas fa-chevron-up"></i>
 				</a>
 			</div>
 		</div>

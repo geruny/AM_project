@@ -12,9 +12,10 @@ add_filter('template_include', function ($path) {
         return get_stylesheet_directory() . '/child-architecture.php';
     } elseif (is_page('contacts')) {
         return get_stylesheet_directory() . '/child-contacts.php';
-    } elseif (is_page('project-card'))
+    } elseif (is_page('project-card')) {
         return get_stylesheet_directory() . '/child-project-card.php';
-
+    } elseif (is_page('prices'))
+        return get_stylesheet_directory() . '/child-prices.php';
 
     return $path;
 });
@@ -22,16 +23,13 @@ add_filter('template_include', function ($path) {
 add_action('wp_enqueue_scripts', 'modern_child_theme_scripts');
 function modern_child_theme_scripts()
 {
+    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() .
         '/libs/css/bootstrap.min.css', array(), '5.0.0', 'all');
 
-    wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() .
-        '/libs/js/bootstrap.min.js', array('jquery'), '5.0.0', true);
-
     wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() .
         '/libs/css/font-awesome.min.css', array(), '5.15.3', 'all');
-
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 
     if (is_page('home')) {
         wp_enqueue_style('home', get_stylesheet_directory_uri() .
@@ -45,7 +43,7 @@ function modern_child_theme_scripts()
             '/libs/js/vue.min.js', array(), '2.6.12', false);
     }
 
-    if (is_page('private-design') || is_page('public-design') || is_page('architecture')) {
+    if (is_page(array('private-design', 'public-design', 'architecture'))) {
         wp_enqueue_style('design', get_stylesheet_directory_uri() .
             '/assets/css/design.css', array(), null, 'all');
 
@@ -54,7 +52,7 @@ function modern_child_theme_scripts()
 
         // masonry & imagesloaded for gallery
         wp_enqueue_script('imagesloaded', get_stylesheet_directory_uri() .
-            '/libs/js/imagesloaded.pkgd.min.js', array('jquery'), null, true);
+            '/libs/js/imagesloaded.pkgd.min.js', array(), null, true);
 
         wp_enqueue_script('masonry', get_stylesheet_directory_uri() .
             '/libs/js/masonry.pkgd.min.js', array('imagesloaded'), null, true);
@@ -70,19 +68,48 @@ function modern_child_theme_scripts()
             '/assets/css/project-card.css', array(), null, 'all');
     }
 
+    if (is_page('prices')) {
+        wp_enqueue_style('prices', get_stylesheet_directory_uri() .
+            '/assets/css/prices.css', array(), null, 'all');
+
+        wp_enqueue_style('jquery-ui', get_stylesheet_directory_uri() .
+        '/libs/css/jquery-ui.css', array(), null, 'all');
+
+        wp_enqueue_script('jquery-ui', get_stylesheet_directory_uri() .
+        '/libs/js/jquery-ui.min.js', array('jquery'), null, true);
+
+        wp_enqueue_script('jquery.ui.touch-punch', get_stylesheet_directory_uri() .
+        '/libs/js/jquery.ui.touch-punch.min.js', array('jquery'), null, true);
+
+        wp_enqueue_script('prices', get_stylesheet_directory_uri() .
+        '/assets/js/prices.js', array('jquery-ui'), null, true);
+
+        wp_enqueue_script('design', get_stylesheet_directory_uri() .
+        '/assets/js/design.js', array(), null, true);
+ 
+        // masonry & imagesloaded for gallery
+        wp_enqueue_script('imagesloaded', get_stylesheet_directory_uri() .
+            '/libs/js/imagesloaded.pkgd.min.js', array(), null, true);
+
+        wp_enqueue_script('masonry', get_stylesheet_directory_uri() .
+            '/libs/js/masonry.pkgd.min.js', array('imagesloaded'), null, true);
+    }
+
     //for slide up animations
     wp_enqueue_style('animate', get_stylesheet_directory_uri() .
         '/libs/css/animate.css', array(), null, 'all');
 
     wp_enqueue_script('slideUp', get_stylesheet_directory_uri() .
         '/libs/js/wow.min.js', array(), null, false);
+
+    wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() .
+        '/libs/js/bootstrap.min.js', array('jquery'), '5.0.0', true);
 }
 
 add_action('wp_head', 'AM_yametrika');
 function AM_yametrika()
 {
 ?>
-
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m, e, t, r, i, k, a) {
@@ -125,7 +152,6 @@ function AM_yametrika()
             ym(75500323, 'reachGoal', 'formMetrika'); //yandex metrika
         }, false);
     </script>
-
 <?php
 }
 
@@ -137,4 +163,12 @@ function getDataProject()
     $project = $wpdb->get_row("SELECT * FROM wp_project_cards WHERE ID = $id");
 
     return $project;
+}
+
+function getData($table)
+{
+    global $wpdb;
+    $data = $wpdb->get_results("SELECT * FROM $table");
+
+    return $data;
 }

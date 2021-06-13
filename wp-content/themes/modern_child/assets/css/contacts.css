@@ -1,74 +1,110 @@
-/* Section contacts */
+/* Theme's corrections */
+/* .site-header .site-header-content,
+.site-description {
+    color: #fff !important;
+} */
 
-#contacts{
-    margin-bottom: 9%;
+#main h2,
+#main h3,
+#main h4 {
+    color: #fff;
 }
 
-#contacts h3 {
-    font-weight: 600;
-    color: #914b4b;
-}
-
-#contacts .bg-contacts {
-    background-color: rgba(0, 0, 0, 0.568);
-    padding: 5%;
+#contacts {
+    padding-bottom: 3%;
 }
 
 #contacts a {
     color: #fff;
-    font-weight: 500;
     transition: all 0.6s;
     -moz-transition: all 0.6s;
     -webkit-transition: all 0.6s;
 }
 
 #contacts a:hover {
-    color: #ff4a5b;
+    color: #D3C4BE;
     transition: all 0.6s;
     -moz-transition: all 0.6s;
     -webkit-transition: all 0.6s;
 }
 
-#contacts .social a {
-    margin-right: 10px;
+#contacts .title {
+    margin: 0 3% 3% 3%;
 }
 
-#contacts i {
-    margin-right: 10px;
+#contacts .contacts-info {
+    margin: 1% 3% 6% 3%;
 }
 
-#contacts .phones {
-    display: block;
+#contacts .contacts-info h3{
+    color: #666;
 }
 
-#contacts .phones:last-child {
-    margin-top: 5px;
+#contacts .contacts-info .social {
+    max-width: fit-content;
+    display: inline;
 }
 
-#contacts .map {
-    margin-top: 3%;
-}
-
-#contacts .border-left {
+#contacts .contacts-info .border-left {
     border-left: 1px solid;
     padding-left: 4%;
     margin-left: 2%;
 }
 
-@media (max-width: 768px) {
+#contacts .contacts-info .adres-wrapper {
+    padding-right: 2%;
+}
 
-    #contacts .bg-contacts {
-        margin-top: 3%;
+#contacts .contacts-info i {
+    margin-right: 10px;
+}
+
+#contacts .contacts-info .social i {
+    font-size: calc(11px + 7 * (100vw / 1280));
+    margin: 0;
+}
+
+#contacts .contacts-info .social a {
+    margin-right: 15%;
+}
+
+#contacts .contacts-info .social a:first-child {
+    margin-left: 3%;
+}
+
+#contacts .contacts-info .phones {
+    display: block;
+}
+
+#contacts .contacts-info .phones:last-child {
+    margin-top: 5px;
+}
+
+#contacts .map {
+    margin: 0 2%;
+}
+
+@media (max-width: 992px) {
+
+    #contacts .contacts-info {
+        margin: 1% 0% 6% 0%;
     }
 
-    #contacts .border-left {
+    #contacts .contacts-info .adres-wrapper {
+        padding-right: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #contacts .contacts-info {
+        margin: 1% 3% 6% 3%;
+    }
+
+    #contacts .contacts-info .border-left {
         padding-left: 0;
         margin-left: 0;
         border-left: none;
-    }
-
-    .contacts-entry {
-        display: none;
     }
 
     #contacts h3 {
@@ -76,14 +112,7 @@
     }
 }
 
-
-#contact-us .contact-us-tittle {
-    margin: 0 7%;
-    padding: 6% 0 4% 3%;
-    border-top: 1px solid;
-}
-
-#contact-us .contact-us-tittle h2 {
-    margin-bottom: 1%;
-    text-transform: uppercase;
+/* form */
+#contact-us{
+    background:none !important;
 }
