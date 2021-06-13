@@ -172,7 +172,7 @@ get_header();
             ?>
                 <div class="grid-item">
                     <div class="grid-link">
-                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/prices/<?= $item->img ?>.jpg" alt="<?= $item->img ?>" />
+                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/prices/<?= $item->img ?>.jpg.webp" alt="<?= $item->img ?>" />
                         <div class="details">
                             <span class="title">
                                 <h3><?= $item->title ?></h3>

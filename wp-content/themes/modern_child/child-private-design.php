@@ -28,7 +28,7 @@ get_header();
             ?>
                 <div class="grid-item">
                     <a class="grid-link" href="<?= get_site_url(null, 'project-card', 'relative'); ?>?id=<?= $item->id_project ?>">
-                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/private_design/<?= $item->img ?>.jpg" alt="<?= $item->img ?>" />
+                        <img class="grid-img" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/private_design/<?= $item->img ?>.jpg.webp" alt="<?= $item->img ?>" />
                         <div class="details">
                             <span class="title">
                                 <h3><?= $item->title ?></h3>

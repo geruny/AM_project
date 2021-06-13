@@ -37,19 +37,19 @@ get_header();
             <div class="col">
                 <div id="interior-app" class="interior-block-container">
                     <a href="<?= get_site_url(null, 'private-design', 'relative'); ?>">
-                        <interior-card data-image="<?= get_stylesheet_directory_uri(); ?>/assets/images/home/2.jpg">
+                        <interior-card data-image="<?= get_stylesheet_directory_uri(); ?>/assets/images/home/2.jpg.webp">
                             <h3 slot="interior-header">Частные интерьеры</h3>
                             <p slot="interior-content">Посмотрите портфолио с дизайном жилых интерьеров.</p>
                         </interior-card>
                     </a>
                     <a href="<?= get_site_url(null, 'public-design', 'relative'); ?>">
-                        <interior-card data-image="<?= get_stylesheet_directory_uri(); ?>/assets/images/home/3.jpg">
+                        <interior-card data-image="<?= get_stylesheet_directory_uri(); ?>/assets/images/home/3.jpg.webp">
                             <h3 slot="interior-header">Коммерческие интерьеры</h3>
                             <p slot="interior-content">Посмотрите портфолио с коммерческими интерьерами.</p>
                         </interior-card>
                     </a>
                     <a href="<?= get_site_url(null, 'architecture', 'relative'); ?>">
-                        <interior-card data-image="<?= get_stylesheet_directory_uri(); ?>/assets/images/home/4.jpg">
+                        <interior-card data-image="<?= get_stylesheet_directory_uri(); ?>/assets/images/home/4.jpg.webp">
                             <h3 slot="interior-header">Архитектура</h3>
                             <p slot="interior-content">Посмотрите портфолио с архитектурными решениями.</p>
                         </interior-card>
@@ -93,7 +93,7 @@ get_header();
     </div>
 </section>
 
-<section id="contacts" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/home/1.jpg);">
+<section id="contacts" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/home/1.jpg.webp);">
     <div id="contacts-bg">
         <? get_template_part('template-parts/frontend/contacts'); ?>
     </div>
