@@ -31,7 +31,7 @@ get_header();
                                 <p>Строительные чертежи</p>
                             </li>
                         </ul>
-                        <a value="2500" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
+                        <a value="2500" href="#calculator" class="cardHref btn btn-gradient mt-2">Расcчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ get_header();
                                 </p>
                             </li>
                         </ul>
-                        <a value="3200" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
+                        <a value="3200" href="#calculator" class="cardHref btn btn-gradient mt-2">Расcчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ get_header();
                                 <p>Декорирование проекта</p>
                             </li>
                         </ul>
-                        <a value="4500" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
+                        <a value="4500" href="#calculator" class="cardHref btn btn-gradient mt-2">Расcчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ get_header();
                                 <p>Контроль этапности стройки</p>
                             </li>
                         </ul>
-                        <a value="30000" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
+                        <a value="30000" href="#calculator" class="cardHref btn btn-gradient mt-2">Расcчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@ get_header();
                                 <p>Работа с рекламациями</p>
                             </li>
                         </ul>
-                        <a value="20000" href="#calculator" class="cardHref btn btn-gradient mt-2">Расчитать тариф</a>
+                        <a value="20000" href="#calculator" class="cardHref btn btn-gradient mt-2">Расcчитать тариф</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ get_header();
     <div class="container">
         <div class="calcArea wow fadeInUp">
             <div class="row">
-                <h2>Расчитайте цену своего проекта</h2>
+                <h2>Расcчитайте цену своего проекта</h2>
             </div>
             <div class="row">
                 <form id="calcForm">
